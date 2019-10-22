@@ -7,17 +7,21 @@
 void selectionSort(int array[], int size) {
 	for (int i = 0; i < size - 1; i++){
 		int minIndex = i;
+		// Search for the smallest element in the second subarray
 		for (int j = i + 1; j < size; j++) {
 			if (array[j] < array[minIndex]) {
 				minIndex = j;
 			}
 		}
+		// Insert the smallest elememt in the first subarray
 		int temp = array[i];
 		array[i] = array[minIndex];
 		array[minIndex] = temp;
 	}
 }
 
+// Utility Functions
+// Print an array
 void printArray(int array[], int size) {
 	for (int i = 0; i < size; i++) {
 		if (i != size - 1) {
