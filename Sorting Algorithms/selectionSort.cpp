@@ -2,7 +2,8 @@
 #include <chrono>
 
 // Selection sort
-// Description: Divide the array in two. Search for the smallest element in the second subarray and inserted in the right place in the first subarray.
+// Description: Divide the array in two. 
+// 		Search for the smallest element in the second subarray and inserted in the right place in the first subarray.
 // Complexity: O(n²)
 void selectionSort(int array[], int size) {
 	for (int i = 0; i < size - 1; i++){
